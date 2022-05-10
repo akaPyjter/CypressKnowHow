@@ -16,6 +16,16 @@ array1.indexOf(element) // if exists returns index number, if not returns -1
 console.log(1 in array2) // returns true or false
 array1.includes(element) // returns true or false
 
+//desctructing array
+const [a, b, c, d, e="a"] = array1
+
+//... operator
+let anystring = "aaaaaa"
+const arr11 = [...array1] //[1,2,3,4]
+const arr12 = [array1] //[[1,2,3,4]]
+const arr13 = [...anystring] //['a','a','a','a','a']
+
+const [c1, c2, ...others] = array1 // ...others = [3,4]
 
 
 // Objects
@@ -30,7 +40,18 @@ const objectos1 = {
     }
 }
 
+const {key1: mappedVariableName1, key3} = objectos1 // Value1 Value3
+
 console.log(objectos1.key1)
 console.log(objectos1['key1'])
 console.log(objectos1['key11']) // returns undefined
 console.log(objectos1.getValue('key1'))
+
+//loops
+for (let element of Object.keys(objectos1)){
+    console.log(element)
+}
+
+for (let element of Object.entries(objectos1)){
+    console.log(element)
+}

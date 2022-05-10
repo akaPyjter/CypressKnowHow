@@ -63,3 +63,11 @@ for(let i = tab.length - 1; i >= 0; i--){}
 //While
 let loop: number = 1
 while (loop <=10){loop++}
+
+//nullish
+let value = 0
+let nullish = value ?? 20 // nulish = 20
+value = 1
+nullish = value ?? 20 // nulish = 1
+let d1 // undefined
+d1 ??= 100 // if undefined assign 100
