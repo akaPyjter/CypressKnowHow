@@ -13,6 +13,20 @@ const variable3 = "C"
 
 const string1 = "I" + variable1 + ' ' + variable2
 const string2 = `a ${variable1}`
+string1[0]
+string1.indexOf('A')
+string1.length
+string1.lastIndexOf('A')
+string1.slice(4) // (4,)
+string1.slice(4,7) // (4,7)
+string1.toLocaleLowerCase()
+string1.toUpperCase()
+string1.trim // remove spaces from start and endś
+string1.replace('a', "aa").replace('b', 'bb')
+string1.split(' ')
+const newString = [1,2,3].join(' ')
+
+
 
 
 // Bool
