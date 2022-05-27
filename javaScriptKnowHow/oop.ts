@@ -54,9 +54,13 @@ class PersonCl {
             console.log("tescik")
         }
     }
-```````````````````
+    
     calcAge(){
         console.log(2022 - this.birthYear);
+    }
+
+    static hey(){
+        console.log('hey')
     }
 }
 
@@ -66,3 +70,4 @@ console.log(jessica.birthYear)
 console.log(jessica.age)
 jessica.age = 30
 console.log(jessica.age)
+PersonCl.hey()
