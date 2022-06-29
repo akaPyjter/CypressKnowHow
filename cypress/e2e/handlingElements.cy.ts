@@ -40,4 +40,12 @@ describe('test', () =>{
             cy.wrap(tableRow).find('td').eq(6).should('contain', '23')
         })
     })
+
+    it('popup', ()=>{
+        cy.visit('https://www.google.pl/')
+        cy.on('window:confirm', (confirm) =>{
+            expect(confirm).to.equal('Are you sure you want delete')
+        } )
+    })
+
 })
